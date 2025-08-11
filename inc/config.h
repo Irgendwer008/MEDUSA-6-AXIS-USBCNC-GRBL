@@ -34,8 +34,8 @@
 // NOTE: OEMs can avoid the need to maintain/update the defaults.h and cpu_map.h files and use only
 // one configuration file by placing their specific defaults and pin map at the bottom of this file.
 // If doing so, simply comment out these two defines and see instructions below.
-//#define DEFAULTS_GENERIC
-#define ABC_AXIS_EXAMPLE
+#define DEFAULTS_3DUSCT_TMS
+#define CPU_MAP_STM32F103_3DUSCT_TMS
 
 #ifdef WIN32
 #define CPU_MAP_WIN32
@@ -52,7 +52,7 @@
 // NONE GRBL 1.1f SETTINGS!:
 //************************************************************************************************************
 // Additional axis
-#define AA_AXIS // Disabled by default. Uncomment to enable.
+//#define AA_AXIS // Disabled by default. Uncomment to enable.
 // Don't use high step rate with B and C axis. Less than 80kHz recommended
 //#define AB_AXIS  // Disabled by default. Uncomment to enable.
 // CAUTION! C axis use SWD (PA13, PA14). After first flashing you can flash controller only with
@@ -165,9 +165,9 @@
 #define HOMING_CYCLE_1 ((1<<X_AXIS)|(1<<Y_AXIS))  // OPTIONAL: Then move X,Y at the same time.
 #define HOMING_CYCLE_2 ((1<<A_AXIS)|(1<<B_AXIS)|(1<<C_AXIS)) // OPTIONAL: Then move A,B,C at the same time.
 #else
-#define HOMING_CYCLE_0 (1<<Z_AXIS)                // REQUIRED: First move Z to clear workspace.
-#define HOMING_CYCLE_1 ((1<<X_AXIS)|(1<<Y_AXIS))  // OPTIONAL: Then move X,Y at the same time.
-// #define HOMING_CYCLE_2                         // OPTIONAL: Uncomment and add axes mask to enable
+#define HOMING_CYCLE_0 ((1<<X_AXIS)|(1<<Y_AXIS)|(1<<Z_AXIS)) // REQUIRED: First move Z to clear workspace.
+// #define HOMING_CYCLE_1 // OPTIONAL: Then move X,Y at the same time.
+// #define HOMING_CYCLE_2 // OPTIONAL: Uncomment and add axes mask to enable
 #endif
 // ---
 

@@ -32,18 +32,18 @@
 
 #ifdef DEFAULTS_GENERIC
   // Grbl generic default settings. Should work across different machines.
-  #define DEFAULT_X_STEPS_PER_MM 250.0f
-  #define DEFAULT_Y_STEPS_PER_MM 250.0f
-  #define DEFAULT_Z_STEPS_PER_MM 250.0f
-  #define DEFAULT_X_MAX_RATE 500.0f // mm/min
-  #define DEFAULT_Y_MAX_RATE 500.0f // mm/min
-  #define DEFAULT_Z_MAX_RATE 500.0f // mm/min
-  #define DEFAULT_X_ACCELERATION (10.0f*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_Y_ACCELERATION (10.0f*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_Z_ACCELERATION (10.0f*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
-  #define DEFAULT_X_MAX_TRAVEL 200.0f // mm NOTE: Must be a positive value.
-  #define DEFAULT_Y_MAX_TRAVEL 200.0f // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 200.0f // mm NOTE: Must be a positive value.
+  #define DEFAULT_X_STEPS_PER_MM 320.0f
+  #define DEFAULT_Y_STEPS_PER_MM 320.0f
+  #define DEFAULT_Z_STEPS_PER_MM 320.0f
+  #define DEFAULT_X_MAX_RATE 2500.0f // mm/min
+  #define DEFAULT_Y_MAX_RATE 2500.0f // mm/min
+  #define DEFAULT_Z_MAX_RATE 2500.0f // mm/min
+  #define DEFAULT_X_ACCELERATION (100.0f*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
+  #define DEFAULT_Y_ACCELERATION (100.0f*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
+  #define DEFAULT_Z_ACCELERATION (100.0f*60*60) // 10*60*60 mm/min^2 = 10 mm/sec^2
+  #define DEFAULT_X_MAX_TRAVEL 320.0f // mm NOTE: Must be a positive value.
+  #define DEFAULT_Y_MAX_TRAVEL 420.0f // mm NOTE: Must be a positive value.
+  #define DEFAULT_Z_MAX_TRAVEL 320.0f // mm NOTE: Must be a positive value.
   #define DEFAULT_SPINDLE_RPM_MAX 1000.0f // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0f // rpm
   #define DEFAULT_STEP_PULSE_MICROSECONDS 10
@@ -599,6 +599,44 @@
 		#define DEFAULT_HOMING_SEEK_RATE 100.0f 				// mm/min
 		#define DEFAULT_HOMING_DEBOUNCE_DELAY 250 				// msec (0-65k)
 		#define DEFAULT_HOMING_PULLOFF 1.5f 					// mm
+#endif
+
+#ifdef DEFAULTS_3DUSCT_TMS
+  // Grbl generic default settings. Should work across different machines.
+  #define DEFAULT_STEP_PULSE_MICROSECONDS 10	// $0
+  #define DEFAULT_STEPPER_IDLE_LOCK_TIME 25		// $1 // msec (0-254, 255 keeps steppers enabled)
+  #define DEFAULT_STEPPING_INVERT_MASK 0		// $2
+  #define DEFAULT_DIRECTION_INVERT_MASK 7		// $3
+  #define DEFAULT_INVERT_ST_ENABLE 0 			// $4 // false
+  #define DEFAULT_INVERT_LIMIT_PINS 1 			// $5 // false
+  #define DEFAULT_INVERT_PROBE_PIN 0 			// $6 // false
+  #define DEFAULT_STATUS_REPORT_MASK 1 			// $10 // MPos enabled
+  #define DEFAULT_JUNCTION_DEVIATION 0.01f		// $11 // mm
+  #define DEFAULT_ARC_TOLERANCE 0.002f			// $12 // mm
+  #define DEFAULT_REPORT_INCHES 0				// $13 // false
+  #define DEFAULT_SOFT_LIMIT_ENABLE 0			// $20 // false
+  #define DEFAULT_HARD_LIMIT_ENABLE 0  			// $21 // false
+  #define DEFAULT_HOMING_ENABLE 1  				// $22 // false
+  #define DEFAULT_HOMING_DIR_MASK 7 			// $23 // move positive dir
+  #define DEFAULT_HOMING_FEED_RATE 25.0f 		// $24 // mm/min
+  #define DEFAULT_HOMING_SEEK_RATE 500.0f 		// $25 // mm/min
+  #define DEFAULT_HOMING_DEBOUNCE_DELAY 10 		// $26 // msec (0-65k)
+  #define DEFAULT_HOMING_PULLOFF 1.0f 			// $27 // mm
+  #define DEFAULT_SPINDLE_RPM_MAX 20000.0f 		// $30 // rpm
+  #define DEFAULT_SPINDLE_RPM_MIN 0.0f 			// $31 // rpm
+  #define DEFAULT_LASER_MODE 0 					// $32 // false
+  #define DEFAULT_X_STEPS_PER_MM 320.0f			// $100
+  #define DEFAULT_Y_STEPS_PER_MM 320.0f			// $101
+  #define DEFAULT_Z_STEPS_PER_MM 320.0f			// $102
+  #define DEFAULT_X_MAX_RATE 2500.0f			// $110 // mm/min
+  #define DEFAULT_Y_MAX_RATE 2500.0f			// $111 // mm/min
+  #define DEFAULT_Z_MAX_RATE 2500.0f			// $112 // mm/min
+  #define DEFAULT_X_ACCELERATION (100.0f*60*60) // $120 // 100*60*60 mm/min^2 = 100 mm/sec^2
+  #define DEFAULT_Y_ACCELERATION (100.0f*60*60) // $121 // 100*60*60 mm/min^2 = 100 mm/sec^2
+  #define DEFAULT_Z_ACCELERATION (100.0f*60*60) // $122 // 100*60*60 mm/min^2 = 100 mm/sec^2
+  #define DEFAULT_X_MAX_TRAVEL 305.0f 			// $130 // mm NOTE: Must be a positive value.
+  #define DEFAULT_Y_MAX_TRAVEL 405.0f 			// $131 // mm NOTE: Must be a positive value.
+  #define DEFAULT_Z_MAX_TRAVEL 305.0f 			// $132 // mm NOTE: Must be a positive value.
 #endif
 
 #endif
