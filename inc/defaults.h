@@ -614,14 +614,14 @@
   #define DEFAULT_JUNCTION_DEVIATION 0.01f		// $11 // mm
   #define DEFAULT_ARC_TOLERANCE 0.002f			// $12 // mm
   #define DEFAULT_REPORT_INCHES 0				// $13 // false
-  #define DEFAULT_SOFT_LIMIT_ENABLE 0			// $20 // false
+  #define DEFAULT_SOFT_LIMIT_ENABLE 1			// $20 // false
   #define DEFAULT_HARD_LIMIT_ENABLE 0  			// $21 // false
   #define DEFAULT_HOMING_ENABLE 1  				// $22 // false
   #define DEFAULT_HOMING_DIR_MASK 7 			// $23 // move positive dir
   #define DEFAULT_HOMING_FEED_RATE 25.0f 		// $24 // mm/min
   #define DEFAULT_HOMING_SEEK_RATE 500.0f 		// $25 // mm/min
   #define DEFAULT_HOMING_DEBOUNCE_DELAY 10 		// $26 // msec (0-65k)
-  #define DEFAULT_HOMING_PULLOFF 1.0f 			// $27 // mm
+  #define DEFAULT_HOMING_PULLOFF 10.0f 			// $27 // mm
   #define DEFAULT_SPINDLE_RPM_MAX 20000.0f 		// $30 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0f 			// $31 // rpm
   #define DEFAULT_LASER_MODE 0 					// $32 // false
