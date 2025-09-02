@@ -34,8 +34,8 @@
 // NOTE: OEMs can avoid the need to maintain/update the defaults.h and cpu_map.h files and use only
 // one configuration file by placing their specific defaults and pin map at the bottom of this file.
 // If doing so, simply comment out these two defines and see instructions below.
-#define DEFAULTS_3DUSCT_TMS
-#define CPU_MAP_STM32F103_3DUSCT_TMS
+#define DEFAULTS_3DUSCT_MEDUSA
+#define CPU_MAP_STM32F103_3DUSCT_MEDUSA
 
 #ifdef WIN32
 #define CPU_MAP_WIN32

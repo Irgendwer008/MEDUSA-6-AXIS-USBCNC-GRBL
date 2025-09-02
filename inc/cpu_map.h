@@ -579,7 +579,7 @@
 
 #endif
 
-#ifdef CPU_MAP_STM32F103_3DUSCT_TMS
+#ifdef CPU_MAP_STM32F103_3DUSCT_MEDUSA
 
   // Define step pulse output pins. NOTE: All step bit pins must be on the same port.
 #define STEP_PORT       GPIOA
@@ -692,7 +692,7 @@
   //   11                                            Y_LIMIT_BIT
   //   12                                            Z_LIMIT_BIT
   //   13 14 SWD																		SPINDLE_ENABLE_BIT
-//     14																						SPINDLE_DIRECTION_BIT
+  //   14																						SPINDLE_DIRECTION_BIT
   //   15     PROBE_BIT
 
 #endif
