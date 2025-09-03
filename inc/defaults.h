@@ -628,12 +628,12 @@
   #define DEFAULT_X_STEPS_PER_MM 320.0f			// $100
   #define DEFAULT_Y_STEPS_PER_MM 320.0f			// $101
   #define DEFAULT_Z_STEPS_PER_MM 320.0f			// $102
-  #define DEFAULT_X_MAX_RATE 2700.0f			// $110 // mm/min
+  #define DEFAULT_X_MAX_RATE 2400.0f			// $110 // mm/min
   #define DEFAULT_Y_MAX_RATE 6000.0f			// $111 // mm/min
-  #define DEFAULT_Z_MAX_RATE 3700.0f			// $112 // mm/min
-  #define DEFAULT_X_ACCELERATION 500 // $120 // mm/sec^2
-  #define DEFAULT_Y_ACCELERATION 500 // $121 // mm/sec^2
-  #define DEFAULT_Z_ACCELERATION 700 // $122 // mm/sec^2
+  #define DEFAULT_Z_MAX_RATE 3300.0f			// $112 // mm/min
+  #define DEFAULT_X_ACCELERATION 200 // $120 // mm/sec^2
+  #define DEFAULT_Y_ACCELERATION 200 // $121 // mm/sec^2
+  #define DEFAULT_Z_ACCELERATION 200 // $122 // mm/sec^2
   #define DEFAULT_X_MAX_TRAVEL 305.0f 			// $130 // mm NOTE: Must be a positive value.
   #define DEFAULT_Y_MAX_TRAVEL 405.0f 			// $131 // mm NOTE: Must be a positive value.
   #define DEFAULT_Z_MAX_TRAVEL 305.0f 			// $132 // mm NOTE: Must be a positive value.
