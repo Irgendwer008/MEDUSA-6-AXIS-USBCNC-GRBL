@@ -621,7 +621,7 @@
   #define DEFAULT_HOMING_FEED_RATE 25.0f 		// $24 // mm/min
   #define DEFAULT_HOMING_SEEK_RATE 500.0f 		// $25 // mm/min
   #define DEFAULT_HOMING_DEBOUNCE_DELAY 10 		// $26 // msec (0-65k)
-  #define DEFAULT_HOMING_PULLOFF 10.0f 			// $27 // mm
+  #define DEFAULT_HOMING_PULLOFF 1.0f 			// $27 // mm
   #define DEFAULT_SPINDLE_RPM_MAX 20000.0f 		// $30 // rpm
   #define DEFAULT_SPINDLE_RPM_MIN 0.0f 			// $31 // rpm
   #define DEFAULT_LASER_MODE 0 					// $32 // false
@@ -634,9 +634,9 @@
   #define DEFAULT_X_ACCELERATION 200 // $120 // mm/sec^2
   #define DEFAULT_Y_ACCELERATION 200 // $121 // mm/sec^2
   #define DEFAULT_Z_ACCELERATION 200 // $122 // mm/sec^2
-  #define DEFAULT_X_MAX_TRAVEL 305.0f 			// $130 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Y_MAX_TRAVEL 405.0f 			// $131 // mm NOTE: Must be a positive value.
-  #define DEFAULT_Z_MAX_TRAVEL 305.0f 			// $132 // mm NOTE: Must be a positive value.
+  #define DEFAULT_X_MAX_TRAVEL 304.0f 			// $130 // mm NOTE: Must be a positive value.
+  #define DEFAULT_Y_MAX_TRAVEL 404.0f 			// $131 // mm NOTE: Must be a positive value.
+  #define DEFAULT_Z_MAX_TRAVEL 304.0f 			// $132 // mm NOTE: Must be a positive value.
 #endif
 
 #endif
